@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../antcomponents/Login'
-import Homepage from '../antcomponents/Homepage'
-
+import UserManage from '../views/UserManage'
+import Users from '../views/Users'
+import UserDetail  from '../views/UserDetail'
 const routes = [
     {
         path:'/login',
@@ -10,9 +11,20 @@ const routes = [
         component:Login
     },
     {
-        path:'/',
-        name:'Homepage',
-        component:Homepage
+        path:'/usermanage',
+        name:'UserManage',
+        component:UserManage
+    },
+    {
+        path:'/users',
+        name:'Users',
+        component:Users
+    },
+    {
+        path:'/users/userdetail/:id',
+        name:'UserDetail',
+        component:UserDetail,
+        props:true
     }
 ]
 

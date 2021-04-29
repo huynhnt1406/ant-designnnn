@@ -1,12 +1,14 @@
 <template>
   <div class="page">
-    <router-view/>
+    <Homepage/>
   </div>
 </template>
 <script>
-
+import Homepage from './antcomponents/Homepage'
 export default {
-
+  components:{
+    Homepage
+  }
 }
 </script>
 <style >
